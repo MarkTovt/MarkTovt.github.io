@@ -9,6 +9,7 @@
 
 body{
    background-color: #63345e;
+   height: 100%;
 }
 
 #headerId{
@@ -68,7 +69,12 @@ body{
 
 #profileImage{
     float: left;
+    background-image: url("myPhoto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 200px;
+    width: 100px;
     border: 0.1em rgb(0, 0, 0) solid;
     display: block;
 }
