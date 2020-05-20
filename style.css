@@ -1,33 +1,47 @@
 *{
     margin: 0%;
     padding: 0%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: antiquewhite;
+    font-family: 'Roboto Mono';
+    color: rgb(5, 5, 7);
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 body{
-    background-color:rgb(36, 41, 68);
-}
-
-div{
-    border-radius: 3rem;
+   background-color: #63345e;
 }
 
 #headerId{
-    justify-content: center;
     height: 5%;
     padding: 2rem;
-    text-transform: uppercase;
-    border-radius: 0%;
-    border-bottom: 1px rgb(0, 0, 0) solid;
+    border-bottom: 1.5px rgb(26, 0, 0) solid;
     margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px 2px rgb(26, 0, 0);
     text-align: center;
     width: 100%;
-    box-shadow: 1px 7px 3px rgba(0, 0, 0, .4);
-    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(36, 41, 68));
+    box-shadow: 1px 10px 3px rgba(0, 0, 0, .4);
+    background: linear-gradient(to bottom, rgb(153, 0, 0), #7700a6);
+}
+
+#navbar{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    background-color: #321450;
+} 
+
+#navbar a{
+    float: left;
+    display: block;
+    text-decoration: none;
+    width: 20%; 
+    text-align: center;
+    border: 1px black solid;
+    flex: 1;
+}
+
+#navbar a:hover{
+    background-color: #29132e;
 }
 
 .sticky {
@@ -36,61 +50,24 @@ div{
     width: 100%;
   }
 
-.sticky + .container2 {
-    padding-top: 4rem;
-    border-radius: 0%; 
+.sticky + .container {
+    padding-top: 60px;
 }
 
-#navbar{
-    display: flex;
-    align-items: stretch;
-    overflow: auto;
-}
-
-#navbar a{
-    color: antiquewhite;
-    text-decoration: none;
-    display: block;
-    border: 0.1em rgb(0, 0, 0) solid;;
-    padding: 0.7rem;
-    background-color: rgb(12, 28, 36);
-    flex: 1;
-    text-align: center;
-    border-radius: 6em;
-    width: 21%;
-    transition: background-color .5s;
-    margin: 0.5rem;
-    box-shadow: 0 5px 0 0 black;
-}
-
-#navbar a:hover{
-    background-color: rgb(12, 35, 42);
-}
-
-#navbar a:active{
-    transform: translateY(4px);
-    box-shadow: 0 1px 0 0 black;
-}
-
-.container2{
-    margin-top: 3em;
-    display:flex;
+.container {
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+    padding: 16px;
 }
 
-.container2 div{
-    background-color: rgb(12, 28, 36);
+.container div{
+    background-color: #ac61b9;
     border: 0.1em rgb(0, 0, 0) solid;;
     padding: 1em;
-    margin: 0.5em;
-    flex: 1;
     align-content: space-around;
 }
 
-#profileImg{
-    background-image: url("image.jpg");
+#profileImage{
+    background-image: url("myPhoto.jpg");
     background-size: contain;
     height: 25em;
     width: 25em;
@@ -99,101 +76,7 @@ div{
     float: left;
 }
 
-#container3{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: rgb(36, 41, 68);
-    border: none;
-}
 
-#p1::before{
-    content: url("js-icon.png");
-}
-
-#p2::before{
-    content: url("css-icon.png");
-}
-
-#p3::before{
-    content: url("html-icon.png");
-}
-
-
-.techKnoledge{
-    width: 75%;
-    text-align: center;
-}
-
-
-.content{
-    align-self: center;
-    transition: all 1.5s ease-in-out;
-}
-
-
-.transform{
-    opacity: 0;
-    transition: 0.5s;
-    line-height: 0%;
-    z-index: -1;
-}
-
-.transform::after, .transform::before{
-    display: none;
-}
-
-.buttonLeft, .buttonRight{
-    background-color: rgb(36, 41, 68);
-    border: none;
-    color: black;
-    text-align: center;
-    transition: all 0.5s;
-    cursor: pointer;
-    font-size: 3rem;
-}
-
-.buttonLeft span, .buttonRight span{
-    color: black;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.buttonLeft span::after{
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: -20px;
-    transition: 0.5s;
-}
-
-.buttonLeft:hover span{
-    padding-right: 25px;
-}
-
-.buttonLeft:hover span::after{
-    opacity: 1;
-    left:0;
-}
-
-.buttonRihgt span::after{
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-
-.buttonRight:hover span{
-    padding-left: 25px;
-}
-
-.buttonRight:hover span::after{
-    opacity: 1;
-    right: 0;
-}
 
 #educationImg{
     background-image: url("uek.jpg");
@@ -206,24 +89,20 @@ div{
     float: right;
 }
 
-.footDiv{
-    border-radius: 0%;
-    border-top: 0.1em rgb(0, 0, 0) solid;
-    background-color: rgb(12, 28, 36);
+footer{
+    padding: 2%;
+    margin-top: 10px;
+    border-top: 1px black solid;
+    background-color: #393f5f;
     display: flex;
     flex-direction: row;
+    width: 100%;
+    text-align: center;
 }
 
-#socialMedia{
-    text-align: right;
-    padding: 1rem;
-    flex: 3;
-    width: 1em;
-    align-content: space-around;
-}
-
-#socialMedia img{
+footer img{
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
+    margin-left: 15px;
 }
