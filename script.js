@@ -1,17 +1,41 @@
-window.onscroll = function() {myFunction()};
+const navbar = document.querySelector("#navbar");
+const sticky = navbar.offsetTop;
+const requestURL = 'https://MarkTovt.github.io/blob/master/techs.json';
+const request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+request.onload = function() {
+  const techs = request.response;
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
+console.log(techs);
+}
+window.onscroll = function() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
   }
+};
+
+function createTechCards(technologies){
+  const { name, image, description } = technologies;
+  const card = `
+    <img src="${image}"></img>
+    <h3>${name}</h3>
+    <p>${description}</p>
+  `;
+  techCard.innerHTML( card);
 }
 
-// Select all links with hashes
+function init(){
+  
+    console.log('hello');
+  
+}
+init();
+
+/* Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
@@ -65,4 +89,4 @@ function displayContentReverse(){
 }
 
 document.getElementById("lButton").addEventListener("click", displayContentReverse);
-document.getElementById("rButton").addEventListener("click", displayContent);
+document.getElementById("rButton").addEventListener("click", displayContent);*/
