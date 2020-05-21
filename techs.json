@@ -1,0 +1,22 @@
+[
+	{
+		"name": "JavaScript",
+	    "image": "js-icon.png",
+	    "description": "some description"
+	},
+	{
+		"name": "CSS",
+	    "image": "css-icon.png",
+	    "description": "some description"
+	},
+	{
+		"name": "HTML",
+	    "image": "html-icon.png",
+	    "description": "some description"
+	},
+	{
+		"name": "Tolls",
+	    "image": "",
+	    "description": "some description"
+	}
+]
