@@ -28,7 +28,7 @@ body{
     width: 100%;
     overflow: hidden;
     display: flex;
-    background-color: #321450;
+    background-color: #451460;
 } 
 
 #navbar a{
@@ -42,7 +42,7 @@ body{
 }
 
 #navbar a:hover{
-    background-color: #29132e;
+    background-color: #451460;
 }
 
 .sticky {
@@ -61,7 +61,7 @@ body{
 }
 
 .container div{
-    background-color: #ac61b9;
+    background-color: #7700a6;
     border: 0.1em rgb(0, 0, 0) solid;;
     padding: 1em;
     align-content: space-around;
@@ -69,14 +69,17 @@ body{
 
 #profileImage{
     float: left;
-    background-image: url("myPhoto.jpg");
+    background-image: url("");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 200px;
     width: 100px;
-    border: 0.1em rgb(0, 0, 0) solid;
+    border-width: 5px;
+    border-style: groove;
+    border-color: coral;
     display: block;
+    margin: 10px;
 }
 
 
@@ -96,7 +99,7 @@ footer{
     padding: 2%;
     margin-top: 10px;
     border-top: 1px black solid;
-    background-color: #393f5f;
+    background-color: #451460;
     display: flex;
     flex-direction: row;
     width: 100%;
