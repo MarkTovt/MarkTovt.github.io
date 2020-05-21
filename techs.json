@@ -1,5 +1,4 @@
-{
-	"techs":[
+[
 	{
 		"name": "JavaScript",
 	    "image": "js-icon.png",
@@ -20,5 +19,4 @@
 	    "image": "",
 	    "description": "some description"
 	}
-	]
-}
+]
