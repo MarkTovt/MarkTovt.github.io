@@ -3,16 +3,14 @@
 const navbar = document.querySelector("#navbar");
 const sticky = navbar.offsetTop;
 const techCard = document.querySelector(".techCard");
+const buttonUp = document.querySelector(".buttonUp");
+const buttonDown = document.querySelector(".buttonDown");
+
 const requestURL = 'https://MarkTovt.github.io/techs.json';
 const request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
-request.onload = function() {
-  const techs = request.response;
-  createTechCards(techs);
-  console.log(techs[0]['name']);
-}
 window.onscroll = function() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
@@ -21,16 +19,25 @@ window.onscroll = function() {
   }
 }
 
-let increment = 0;
+request.onload = function() {
+  const techs = request.response;
+  console.log(techs.length);
+  createTechCards(techs);
+}
 
 function createTechCards(jsonObj){
-  const myH1 = document.createElement('h3');
-  const techImage = document.createElement('img');
-  const techDescription = document.createElement('p');
-  myH1.textContent = jsonObj[increment]['name'];
-  techImage.src = jsonObj[increment]['image'];
-  techDescription.textContent = jsonObj[increment]['description'];
-  techCard.appendChild(myH1);
-  techCard.appendChild(techImage);
-  techCard.appendChild(techDescription);
+  for (var i = 0; i < jsonObj.length; i++) {
+    const myArticle = document.createElement('article');
+    const myH1 = document.createElement('h4');
+    const techImage = document.createElement('img');
+    const techDescription = document.createElement('p');
+    myH1.textContent = jsonObj[i]['name'];
+    techImage.src = jsonObj[i]['image'];
+    techDescription.textContent = jsonObj[i]['description'] + '\n';
+    myArticle.appendChild(myH1);
+    myArticle.appendChild(techImage);
+    myArticle.appendChild(techDescription);
+    
+    techCard.appendChild(myArticle);
+  }
 }
