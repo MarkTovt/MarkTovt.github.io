@@ -1,42 +1,42 @@
 [
 	{
 		"name": "JavaScript",
-	    "image": "js-icon.png",
+	    "image": "./icons/js-icon.png",
 	    "description": "some description"
 	},
 	{
 		"name": "CSS",
-	    "image": "css-icon.png",
+	    "image": "./icons/css-icon.png",
 	    "description": "some description"
 	},
 	{
 		"name": "HTML",
-	    "image": "html-icon.png",
+	    "image": "./icons/html-icon.png",
 	    "description": "some description"
 	},
 	{
 		"name": "GIT",
-	    "image": "",
+	    "image": "./icons/git.png",
 	    "description": "some description"
 	},
 	{
 		"name": "JQUERY, JSON",
-	    "image": "",
+	    "image": "./icons/jquery.png" ,
 	    "description": "some description"
 	},
 	{
 		"name": "LINUX, WINDOWS OS",
-	    "image": "",
+	    "image": "./icons/linux.png",
 	    "description": "some description"
 	},
 	{
 		"name": "MICROSOFT OFFICE",
-	    "image": "",
+	    "image": "./icons/office.png",
 	    "description": "some description"
 	},
 	{
 		"name": "REACT, PYTHON",
-	    "image": "",
+	    "image": "./icons/react.png",
 	    "description": "some description"
 	},
 	{
