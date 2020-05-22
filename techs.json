@@ -1,47 +1,47 @@
 [
 	{
 		"name": "JavaScript",
-	    "image": "/icons/js-icon.png",
+	    "image": "./icons/js-icon.png",
 	    "description": "some description"
 	},
 	{
 		"name": "CSS",
-	    "image": "/icons/css-icon.png",
+	    "image": "./icons/css-icon.png",
 	    "description": "some description"
 	},
 	{
 		"name": "HTML",
-	    "image": "/icons/html-icon.png",
+	    "image": "./icons/html-icon.png",
 	    "description": "some description"
 	},
 	{
 		"name": "GIT",
-	    "image": "/icons/git.png",
+	    "image": "./icons/git.png",
 	    "description": "some description"
 	},
 	{
 		"name": "JQUERY, JSON",
-	    "image": "/icons/jquery.png" ,
+	    "image": "./icons/jquery.png" ,
 	    "description": "some description"
 	},
 	{
 		"name": "LINUX, WINDOWS OS",
-	    "image": "/icons/linux.png",
+	    "image": "./icons/linux.png",
 	    "description": "some description"
 	},
 	{
 		"name": "MICROSOFT OFFICE",
-	    "image": "/icons/office.png",
+	    "image": "./icons/office.png",
 	    "description": "some description"
 	},
 	{
 		"name": "REACT, PYTHON",
-	    "image": "/icons/react.png",
+	    "image": "./icons/react.png",
 	    "description": "some description"
 	},
 	{
 		"name": "COMPUTER NETWORKING",
-	    "image": "/networking.png",
+	    "image": "./networking.png",
 	    "description": "some description"
 	}
 ]
