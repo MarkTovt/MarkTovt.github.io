@@ -15,7 +15,22 @@
 	    "description": "some description"
 	},
 	{
-		"name": "Tools",
+		"name": "GIT",
+	    "image": "",
+	    "description": "some description"
+	},
+	{
+		"name": "JQUERY, JSON",
+	    "image": "",
+	    "description": "some description"
+	},
+	{
+		"name": "LINUX, WINDOWS OS",
+	    "image": "",
+	    "description": "some description"
+	},
+	{
+		"name": "MICROSOFT OFFICE",
 	    "image": "",
 	    "description": "some description"
 	}
