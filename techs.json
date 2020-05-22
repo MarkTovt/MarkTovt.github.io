@@ -33,5 +33,15 @@
 		"name": "MICROSOFT OFFICE",
 	    "image": "",
 	    "description": "some description"
+	},
+	{
+		"name": "REACT, PYTHON",
+	    "image": "",
+	    "description": "some description"
+	},
+	{
+		"name": "COMPUTER NETWORKING",
+	    "image": "",
+	    "description": "some description"
 	}
 ]
