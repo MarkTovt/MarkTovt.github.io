@@ -41,7 +41,7 @@
 	},
 	{
 		"name": "COMPUTER NETWORKING",
-	    "image": "./networking.png",
+	    "image": "./icons/networking.png",
 	    "description": "some description"
 	}
 ]
