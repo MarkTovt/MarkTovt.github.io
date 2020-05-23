@@ -21,12 +21,18 @@
 	},
 	{
 		"name": "JQUERY, JSON",
-	    "image": "./icons/jquery.png" ,
+	    "image": [
+	    	"./icons/jquery.png" ,
+	    	"./icons/json.png"
+			],	    
 	    "description": "some description"
 	},
 	{
 		"name": "LINUX, WINDOWS OS",
-	    "image": "./icons/linux.png",
+		"image": [
+	    	"./icons/linux.png",
+	    	"./icons/windows.png"
+	    ],	
 	    "description": "some description"
 	},
 	{
@@ -36,7 +42,10 @@
 	},
 	{
 		"name": "REACT, PYTHON",
-	    "image": "./icons/react.png",
+	    "image": [
+	    	"./icons/react.png",
+	    	"./icons/python.png"
+	    ],
 	    "description": "some description"
 	},
 	{
