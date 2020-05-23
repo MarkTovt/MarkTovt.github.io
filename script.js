@@ -21,7 +21,6 @@ window.onscroll = function() {
 
 request.onload = function() {
   const techs = request.response;
-  console.log(techs.length);
   createTechCards(techs);
 }
 
@@ -29,20 +28,25 @@ function createTechCards(jsonObj){
   for (var i = 0; i < jsonObj.length; i++) {
     const myArticle = document.createElement('article');
     const myH1 = document.createElement('h4');
-    const techImage = document.createElement('section');
     const techDescription = document.createElement('p');
-    myH1.textContent = jsonObj[i]['name'];
-    techDescription.textContent = jsonObj[i]['description'] + '\n';
+    myH1.textContent = jsonObj[i].name;
+    techDescription.textContent = jsonObj[i].description + '\n';
     myArticle.appendChild(myH1);
     const techsImages = jsonObj[i].image;
-    for (var j = 0; j<techsImages.length; j++) {
-      const image = document.createElement('img')
-      image.src = jsonObj[j][i];
-      techImage.appendChild(image);
-    }
+    if (typeof(techsImages) == "string") {
+      const techImage = document.createElement('img');
+      techImage.src = jsonObj[i].image;
+      myArticle.appendChild(techImage);
+    } else {
+      const techImage = document.createElement('section');
+      for (var j = 0; j<techsImages.length; j++) {
+        const images = document.createElement('img');
+        images.src = jsonObj[i]['image'][j];
+        techImage.appendChild(images);
+      }
     myArticle.appendChild(techImage);
+    }
     myArticle.appendChild(techDescription);
-    
     techCard.appendChild(myArticle);
   }
 }
