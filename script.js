@@ -29,12 +29,17 @@ function createTechCards(jsonObj){
   for (var i = 0; i < jsonObj.length; i++) {
     const myArticle = document.createElement('article');
     const myH1 = document.createElement('h4');
-    const techImage = document.createElement('img');
+    const techImage = document.createElement('section');
     const techDescription = document.createElement('p');
     myH1.textContent = jsonObj[i]['name'];
-    techImage.src = jsonObj[i]['image'];
     techDescription.textContent = jsonObj[i]['description'] + '\n';
     myArticle.appendChild(myH1);
+    const techsImages = jsonObj[i].image;
+    for (var j = 0; j<techsImages.length; j++) {
+      const image = document.createElement('img')
+      image.src = jsonObj[j][i];
+      techImage.appendChild(image);
+    }
     myArticle.appendChild(techImage);
     myArticle.appendChild(techDescription);
     
