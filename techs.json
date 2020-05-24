@@ -13,29 +13,21 @@
 	    "description": "With the help of the HTML5, CSS3 I can create amazing things."
 	},
 	{
-		"name": "GIT",
-	    "image": "./icons/git.png",
-	    "description": "some description"
-	},
-	{
-		"name": "JQUERY, JSON",
+		"name": "GIT, JQUERY, JSON",
 	    "image": [
+	    	"./icons/git.png",
 	    	"./icons/jquery.png",
 	    	"./icons/json.png"
 			],	    
 	    "description": "some description"
 	},
 	{
-		"name": "LINUX, WINDOWS OS",
+		"name": "LINUX, WINDOWS OS, OFFICE",
 		"image": [
 	    	"./icons/linux.png",
-	    	"./icons/windows.png"
+	    	"./icons/windows.png",
+	    	"./icons/office.png"
 	    ],	
-	    "description": "some description"
-	},
-	{
-		"name": "MICROSOFT OFFICE",
-	    "image": "./icons/office.png",
 	    "description": "some description"
 	},
 	{
