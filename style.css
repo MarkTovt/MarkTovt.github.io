@@ -8,7 +8,7 @@
 }
 
 body{
-   background-color: #63345e;
+   background-color: #300050;
    height: 100%;
 }
 
@@ -21,14 +21,14 @@ body{
     text-align: center;
     width: 100%;
     box-shadow: 1px 10px 3px rgba(0, 0, 0, .4);
-    background: linear-gradient(to bottom, rgb(153, 0, 0), #7700a6);
+    background: linear-gradient(to bottom, rgb(153, 0, 0), #300050);
 }
 
 #navbar{
     width: 100%;
     overflow: hidden;
     display: flex;
-    background-color: #451460;
+    background-color: #350050;
 } 
 
 #navbar a{
@@ -62,7 +62,7 @@ body{
 }
 
 .container div{
-    background-color: #7700a6;
+    background-color: #500060;
     border: 0.1em rgb(0, 0, 0) solid;;
     padding: 1em;
 }
@@ -71,7 +71,7 @@ footer{
     padding: 2%;
     margin-top: 10px;
     border-top: 1px black solid;
-    background-color: #451460;
+    background-color: #350050;
     display: flex;
     flex-direction: row;
     width: 100%;
