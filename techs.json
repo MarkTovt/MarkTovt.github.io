@@ -1,19 +1,19 @@
 [
 	{
-		"name": "JavaScript, CSS",
-	    "image": ["./icons/js-icon.png", 
-	    	"./icons/html-icon.png"
-	    ],
+		"name": "JavaScript",
+	    "image": "./icons/js-icon.png",
 	    "description": "some description"
 	},
 	{
-		"name": "HTML",
+		"name": "HTML, CSS",
 	    "image": "./icons/html-icon.png",
 	    "description": "some description"
 	},
 	{
 		"name": "GIT",
-	    "image": "./icons/git.png",
+	    "image": ["./icons/git.png",, 
+	    	"./icons/html-icon.png"
+	    ],
 	    "description": "some description"
 	},
 	{
