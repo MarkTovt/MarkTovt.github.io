@@ -6,8 +6,9 @@
 	},
 	{
 		"name": "HTML, CSS",
-	    "image": ["./icons/html-icon.png",
-	    		 "./icons/css-icon.png"
+	    "image": [
+	    	"./icons/html-icon.png",
+	    	"./icons/css-icon.png"
 	    ],
 	    "description": "some description"
 	},
@@ -19,7 +20,7 @@
 	{
 		"name": "JQUERY, JSON",
 	    "image": [
-	    	"./icons/jquery.png" ,
+	    	"./icons/jquery.png",
 	    	"./icons/json.png"
 			],	    
 	    "description": "some description"
