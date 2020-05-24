@@ -2,7 +2,8 @@
 	{
 		"name": "JavaScript",
 	    "image": "./icons/js-icon.png",
-	    "description": "some description"
+	    "description": "Websites, applications, games.",
+	     "All this can be done with almighty JavaScript"
 	},
 	{
 		"name": "HTML, CSS",
@@ -10,7 +11,7 @@
 	    	"./icons/html-icon.png",
 	    	"./icons/css-icon.png"
 	    ],
-	    "description": "some description"
+	    "description": "With the help of the HTML5, CSS3 I can create amazing things."
 	},
 	{
 		"name": "GIT",
