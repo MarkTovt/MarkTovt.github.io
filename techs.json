@@ -1,16 +1,12 @@
 [
 	{
-		"name": "JavaScript",
-	    "image": "./icons/js-icon.png",
-	    "description": "Websites, applications, games. All this can be done with almighty JavaScript"
-	},
-	{
-		"name": "HTML, CSS",
+		"name": "JavaScript, HTML, CSS",
 	    "image": [
+	    	"./icons/js-icon.png",
 	    	"./icons/html-icon.png",
 	    	"./icons/css-icon.png"
 	    ],
-	    "description": "With the help of the HTML5, CSS3 I can create amazing things."
+	    "description": "Websites, applications, games. All this can be done with almighty JavaScript. With the help of the HTML5, CSS3 I can create amazing things."
 	},
 	{
 		"name": "GIT, JQUERY, JSON",
