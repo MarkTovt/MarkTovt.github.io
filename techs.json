@@ -6,7 +6,7 @@
 	    	"./icons/html-icon.png",
 	    	"./icons/css-icon.png"
 	    ],
-	    "description": "Websites, applications, games. All this can be done with almighty JavaScript. With the help of the HTML5, CSS3 I can create amazing things."
+	    "description": "Websites, applications, games. All this can be done with almighty JavaScript. With the help of the HTML5, CSS3 I trying to create amazing things, gain new skills in order to become guru of web developing."
 	},
 	{
 		"name": "GIT, JQUERY, JSON",
@@ -15,7 +15,7 @@
 	    	"./icons/jquery.png",
 	    	"./icons/json.png"
 			],	    
-	    "description": "some description"
+	    "description": "Everybody knows what git stands for, and for me it isn't something special). I can say that I work with JSON with confidence, also as an alternative to XML. And JQuery in order to simplify HTML DOM tree manipulation"
 	},
 	{
 		"name": "LINUX, WINDOWS OS, OFFICE",
@@ -24,7 +24,7 @@
 	    	"./icons/windows.png",
 	    	"./icons/office.png"
 	    ],	
-	    "description": "some description"
+	    "description": "With no doubt can say that I am advanced Windows OS user, as well as with Linux, especially Ubuntu and Kali distributions. I used to have these distributions as main OS, but now only using them as vitrual machine playground to polish skills and achieve new ones. The ability to use Microsoft Office services is nothing more than a necessity today."
 	},
 	{
 		"name": "REACT, PYTHON",
@@ -32,11 +32,11 @@
 	    	"./icons/react.png",
 	    	"./icons/python.png"
 	    ],
-	    "description": "some description"
+	    "description": "Knowledge of one of the most popular frameworks only can make my future project better and better. But i won't stop on it and go further to wider my languages list and Python fits to my purpose. As well as working with web apps, it serves for network engineers purposes."
 	},
 	{
 		"name": "COMPUTER NETWORKING",
 	    "image": "./icons/networking.png",
-	    "description": "some description"
+	    "description": "The field of computer science in which I became interested relatively recently, but in which I have already reached considerable heights. I will say with confidence that I am not going to stop and go further and learn from the best to become one of best."
 	}
 ]
