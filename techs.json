@@ -1,12 +1,9 @@
 [
 	{
-		"name": "JavaScript",
-	    "image": "./icons/js-icon.png",
-	    "description": "some description"
-	},
-	{
-		"name": "CSS",
-	    "image": "./icons/css-icon.png",
+		"name": "JavaScript, CSS",
+	    "image": ["./icons/js-icon.png", 
+	    	"./icons/html-icon.png"
+	    ],
 	    "description": "some description"
 	},
 	{
