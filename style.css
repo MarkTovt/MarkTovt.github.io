@@ -58,41 +58,13 @@ body{
 .container {
     align-items: center;
     padding: 16px;
+    text-align: center;
 }
 
 .container div{
     background-color: #7700a6;
     border: 0.1em rgb(0, 0, 0) solid;;
     padding: 1em;
-}
-
-#profileImage{
-    float: left;
-    background-image: url("image.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100px;
-    min-width: 50px;
-    max-height: 200px;
-    max-width: 100px;
-    border-width: 5px;
-    border-style: groove;
-    border-color: coral;
-    display: block;
-}
-
-
-
-#educationImg{
-    background-image: url("uek.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 10em;
-    width: 18em;
-    border-radius: 0%;
-    border: 0.1em rgb(0, 0, 0) solid;
-    float: right;
 }
 
 footer{
