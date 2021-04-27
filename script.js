@@ -1,52 +1,57 @@
 'use strict'
-
-const navbar = document.querySelector("#navbar");
-const sticky = navbar.offsetTop;
+const navbar = document.querySelector(".navbar");
 const techCard = document.querySelector(".techCard");
-const buttonUp = document.querySelector(".buttonUp");
-const buttonDown = document.querySelector(".buttonDown");
+const floatingING = document.querySelector("#floatingIMG");
+const collapsibleNavbar = document.querySelector("#collapsibleNavbar");
+const seeMore = document.querySelector("#seeMoreButt");
+
+//navbar.style.height += navbar.getBoundingClientRect().height;
 
 const requestURL = 'https://MarkTovt.github.io/techs.json';
 const request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
-window.onscroll = function() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
+
+
+//request.onload = function() {
+//  const techs = request.response;
+//  createTechCards(techs);
+//}
+
+seeMore.addEventListener('click',(e)=>{
+    console.log(e.target);
+  linkFunc(seeMore.firstElementChild);
+});
+
+navbar.addEventListener('click',(e)=>{
+  if (e.target.tagName == "A"){
+    e.preventDefault();
+    linkFunc(e.target.closest('A'));
   }
+});
+
+(function floating(){
+  floatingIMG.style.transform = 'translateX(20vw)';
+})();
+
+function linkFunc(elem){
+  let navButton = document.querySelector(".navbar-collapse");
+
+  
+  console.log(navButton.style);
+  //if(screen.width<768){
+  //navButton.classList.add('collapsed');
+  //navButton.ariaExpanded = "false";
+  //collapsibleNavbar.classList.toggle('show');
+  //collapsibleNavbar.classList.remove('collapse');
+  //collapsibleNavbar.classList.add('collapsing')
+  //}
+  let search = document.querySelector(`#${elem.dataset.nav}`);
+  let top = search.getBoundingClientRect().top - navbar.clientHeight*1.3 + pageYOffset;
+  window.scrollTo(0, top);
 }
 
-request.onload = function() {
-  const techs = request.response;
-  createTechCards(techs);
-}
-
-function createTechCards(jsonObj){
-  for (var i = 0; i < jsonObj.length; i++) {
-    const myArticle = document.createElement('article');
-    const myH1 = document.createElement('h4');
-    const techDescription = document.createElement('p');
-    myH1.textContent = jsonObj[i].name;
-    techDescription.textContent = jsonObj[i].description + '\n';
-    myArticle.appendChild(myH1);
-    const techsImages = jsonObj[i].image;
-    if (typeof(techsImages) == "string") {
-      const techImage = document.createElement('img');
-      techImage.src = jsonObj[i].image;
-      myArticle.appendChild(techImage);
-    } else {
-      const techImage = document.createElement('section');
-      for (var j = 0; j<techsImages.length; j++) {
-        const images = document.createElement('img');
-        images.src = jsonObj[i]['image'][j];
-        techImage.appendChild(images);
-      }
-    myArticle.appendChild(techImage);
-    }
-    myArticle.appendChild(techDescription);
-    techCard.appendChild(myArticle);
-  }
-}
+(function floating(){
+  floatingIMG.style.transform = 'translateX(20vw)';
+})();
