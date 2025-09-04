@@ -1,2 +1,5 @@
-Email;Phone number;
-test@test.com;+48123456789;
+Email,Phone number
+test@test.com,+48123456789
+test2@test.com,+48223456789;
+test3@test.com,+48323456789;
+
